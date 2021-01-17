@@ -5,8 +5,14 @@ import { PostItem } from './PostItem';
 
 export const PostList = ({posts}: {posts: IPost[]}) => (
   <ul className={styles.postslist}>
-    {posts.map(({id, date, title}) => (
-      <PostItem id={id} date={date} title={title}/>
+    {posts.map(({id, date, title, spoiler}) => (
+      <PostItem
+        id={id}
+        date={date}
+        title={title}
+        spoiler={spoiler}
+        key={id}
+      />
     ))}
   </ul>
 );

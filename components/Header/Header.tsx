@@ -2,16 +2,17 @@ import React from 'react';
 import Link from 'next/link';
 import styles from './header.module.scss';
 
+const BLOG_NAME = 'Frontend blog.';
 export const Header = ({isHome = false}: {isHome?: boolean}) => (
   <header className={styles.header}>
     {isHome ? (
-      <h2 className={styles.homeLogo}>Frontend blog</h2>
+      <h2 className={styles.homeLogo}>{BLOG_NAME}</h2>
     ) : (
       <Link href='/'>
-        <h2 className={styles.postLogo}>Frontend blog</h2>
+        <h2 className={styles.postLogo}>{BLOG_NAME}</h2>
       </Link>
     )
     }
-    <span>themeToggler</span>
+    <span>theme</span>
   </header>
 );

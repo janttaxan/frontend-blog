@@ -1,14 +1,13 @@
 import React from 'react';
-import styles from './index.module.scss';
 import { Layout } from '../components/Layout/';
-import { GetStaticProps } from 'next';
 import { getSortedPostsData } from '../lib/posts';
 import { IPost } from '../interfaces';
 import { PostList } from '../components/PostList';
+import { GetStaticProps } from 'next';
 
 const Home = ({allPostsData}: {allPostsData: IPost[]}) => (
   <Layout home>
-    <section className={styles.posts}>
+    <section>
       <PostList posts={allPostsData}/>
     </section>
   </Layout>

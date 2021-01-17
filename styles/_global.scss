@@ -9,11 +9,12 @@
 }
 
 body {
-  @include useMerriweather();
+  @include useIbmPlexSans();
   background-color: $bg;
   color: $text;
   font-size: 16px;
-  line-height: 1.75;
+  line-height: 1.6;
+  margin: 0;
 }
 
 p {
@@ -23,13 +24,35 @@ p {
 
 h1, h2, h3, h4, h5 {
   @include useMontserrat();
+  margin: 48px 0 16px;
+}
+
+h1 {
+  font-size: 40px;
+}
+
+h2 {
+  font-size: 24px;
+}
+
+h3 {
+  font-size: 18px;
+  margin: 40px 0 16px;
 }
 
 code, pre {
   @include useJetBrainsMono();
-  line-height: 1.5;
-  background: $inlineCodeBg;
+}
+
+code {
+  background-color: $inlineCodeBg;
   color: $inlineCodeText;
+  padding: 2px 4px;
+  border-radius: 4px;
+}
+
+pre {
+  margin: 16px 0 32px;
 }
 
 a {
@@ -39,5 +62,31 @@ a {
 
   &:hover {
     box-shadow: none;
+  }
+}
+
+@media all and (min-width: 768px) {
+  h1, h2, h3, h4, h5 {
+    margin: 64px 0 16px;
+  }
+
+  h1 {
+    font-size: 48px;
+  }
+
+  h2 {
+    font-size: 28px;
+  }
+
+  h3 {
+    font-size: 20px;
+  }
+
+  pre {
+    margin: 16px 0 48px;
+  }
+
+  ul, ol {
+    padding: 0;
   }
 }

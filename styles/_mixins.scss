@@ -4,13 +4,15 @@
   line-height: 1.2;
 }
 
-@mixin useMerriweather {
-  font-family: 'Merriweather', sans-serif;
+@mixin useIbmPlexSans {
+  font-family: 'IBM Plex Sans', sans-serif;
   font-weight: 400;
 }
 
 @mixin useJetBrainsMono {
   font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  line-height: 1.8;
   font-weight: 400;
   white-space: pre;
   word-spacing: normal;

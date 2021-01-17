@@ -3,6 +3,7 @@ import { Layout } from '../components/Layout';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { getAllPostIds, getPostData } from '../lib/posts';
 import { IPost } from '../interfaces';
+import { Date } from '../components/Date';
 
 type TPostData = {
   postData: IPost
@@ -13,11 +14,8 @@ const Post = ({postData}: TPostData) => {
     <Layout title={postData.title}>
       <article>
         <h1>{postData.title}</h1>
-        <span>{postData.date}</span>
+        <Date dateString={postData.date}/>
         <div dangerouslySetInnerHTML={{__html: postData.contentHtml}}/>
-        <pre>
-          <code>function</code>
-        </pre>
       </article>
     </Layout>
   );
