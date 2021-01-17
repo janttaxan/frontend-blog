@@ -1,6 +1,7 @@
 import React from 'react';
 import Link from 'next/link';
 import styles from './header.module.scss';
+import { ThemeSwitch } from './ThemeSwitch';
 
 const BLOG_NAME = 'Frontend blog.';
 export const Header = ({isHome = false}: {isHome?: boolean}) => (
@@ -13,6 +14,6 @@ export const Header = ({isHome = false}: {isHome?: boolean}) => (
       </Link>
     )
     }
-    <span>theme</span>
+    <ThemeSwitch/>
   </header>
 );

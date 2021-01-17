@@ -15,7 +15,10 @@ const Post = ({postData}: TPostData) => {
       <article>
         <h1>{postData.title}</h1>
         <Date dateString={postData.date}/>
-        <div dangerouslySetInnerHTML={{__html: postData.contentHtml}}/>
+        <div
+          style={{margin: '48px 0 0'}}
+          dangerouslySetInnerHTML={{__html: postData.contentHtml}}
+        />
       </article>
     </Layout>
   );
