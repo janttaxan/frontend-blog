@@ -1,0 +1,26 @@
+@import "styles/variables";
+
+.header {
+  display: flex;
+  width: 100%;
+  align-items: flex-start;
+  justify-content: space-between;
+}
+
+.homeLogo, .postLogo {
+  margin: 0;
+}
+
+.homeLogo {
+  font-size: 36px;
+}
+
+.postLogo {
+  font-size: 20px;
+  color: $secondary;
+  cursor: pointer;
+
+  &:hover {
+    color: $primary;
+  }
+}

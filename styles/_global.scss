@@ -1,0 +1,43 @@
+@import "variables";
+@import "mixins";
+@import "fonts";
+
+* {
+  box-sizing: border-box;
+  -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+}
+
+body {
+  @include useMerriweather();
+  background-color: $bg;
+  color: $text;
+  font-size: 16px;
+  line-height: 1.75;
+}
+
+p {
+  margin: 0 0 24px 0;
+  padding: 0;
+}
+
+h1, h2, h3, h4, h5 {
+  @include useMontserrat();
+}
+
+code, pre {
+  @include useJetBrainsMono();
+  line-height: 1.5;
+  background: $inlineCodeBg;
+  color: $inlineCodeText;
+}
+
+a {
+  color: $link;
+  text-decoration: none;
+  box-shadow: 0 1px 0 0 currentColor;
+
+  &:hover {
+    box-shadow: none;
+  }
+}
