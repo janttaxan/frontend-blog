@@ -1,0 +1,29 @@
+@import "styles/variables";
+
+.footer {
+  padding: 64px 0 0;
+}
+
+.wrap {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  width: 100%;
+}
+
+.socialList {
+  display: flex;
+  list-style: none;
+  margin: 0;
+  padding: 0;
+}
+
+.socialItem {
+  position: relative;
+  padding-right: 16px;
+}
+
+.copy {
+  margin: 12px 0;
+}

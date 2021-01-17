@@ -1,0 +1,21 @@
+@mixin useMontserrat {
+  font-family: 'Montserrat', sans-serif;
+  font-weight: 900;
+  line-height: 1.2;
+}
+
+@mixin useIbmPlexSans {
+  font-family: 'IBM Plex Sans', sans-serif;
+  font-weight: 400;
+}
+
+@mixin useJetBrainsMono {
+  font-family: 'JetBrains Mono', monospace;
+  font-size: 13px;
+  line-height: 1.8;
+  font-weight: 400;
+  white-space: pre;
+  word-spacing: normal;
+  word-break: normal;
+  word-wrap: normal;
+}

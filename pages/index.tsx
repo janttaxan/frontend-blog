@@ -1,10 +1,25 @@
-import Layout from '../components/Layout';
 import React from 'react';
+import { Layout } from '../components/Layout/';
+import { getSortedPostsData } from '../lib/posts';
+import { IPost } from '../interfaces';
+import { PostList } from '../components/PostList';
+import { GetStaticProps } from 'next';
 
-const IndexPage = () => (
-  <Layout>
-    <h1>Hello</h1>
+const Home = ({allPostsData}: {allPostsData: IPost[]}) => (
+  <Layout home>
+    <section>
+      <PostList posts={allPostsData}/>
+    </section>
   </Layout>
 );
 
-export default IndexPage;
+export const getStaticProps: GetStaticProps = async () => {
+  const allPostsData = getSortedPostsData();
+  return {
+    props: {
+      allPostsData,
+    },
+  };
+};
+
+export default Home;
