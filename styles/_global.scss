@@ -31,6 +31,8 @@
   box-sizing: border-box;
   -webkit-font-smoothing: antialiased;
   -moz-osx-font-smoothing: grayscale;
+  -webkit-text-size-adjust: 100%;
+  text-rendering: optimizeLegibility;
 }
 
 body {
@@ -65,8 +67,10 @@ h3 {
   margin: 40px 0 16px;
 }
 
-code, pre {
+code, pre, code > *, code > * > *, code > * > * > * {
   @include useJetBrainsMono();
+  -webkit-font-smoothing: unset;
+  -moz-osx-font-smoothing: unset;
 }
 
 code {
