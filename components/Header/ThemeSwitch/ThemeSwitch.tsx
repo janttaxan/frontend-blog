@@ -1,26 +1,27 @@
-import React, { useContext, useEffect } from 'react';
-import { ThemeContext } from '../../../context/ThemeContext';
+import React, { useEffect, useState } from 'react';
 import Toggle from 'react-toggle';
 import { Night } from './Night';
 import { Day } from './Day';
+import { useTheme } from 'next-themes';
 
 export const ThemeSwitch = () => {
-  const themeContext = useContext(ThemeContext);
+  const [mounted, setMounted] = useState(false);
+  const {theme, setTheme} = useTheme();
 
-  useEffect(() => {
-    console.log('context:', themeContext.theme);
-    console.log('====================================');
-  }, [themeContext]);
+  // When mounted on client, now we can show the UI
+  useEffect(() => setMounted(true), []);
+  if (!mounted) return null;
 
   return (
     <label>
       <Toggle
-        defaultChecked={themeContext.theme === 'light'}
+        checked={theme === 'dark'}
         icons={{
           checked: <Night/>,
           unchecked: <Day/>,
         }}
-        onChange={themeContext.toggleTheme}/>
+        onChange={() => setTheme(theme === 'light' ? 'dark' : 'light')}
+      />
     </label>
   );
 };

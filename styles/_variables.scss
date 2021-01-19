@@ -1,11 +1,9 @@
-$primary: #5E56D0;
-$secondary: rgba($primary, 0.8);
-$bg: #FFF;
-$text: #333333;
-$title: $primary;
-$link: $primary;
-$inlineCodeBg: rgba(255, 233, 159, 0.3);
-$inlineCodeText: #333333;
-//$hr: hsla(0, 0%, 89%, 0.2);
-//$shadow: 0 2px 15px 0 rgba(26, 26, 27, 0.637);
+$primary: var(--primary);
+$secondary: var(--secondary);
+$bg: var(--bg);
+$text: var(--text);
+$title: var(--title);
+$link: var(--link);
+$inlineCodeBg: var(--inlineCodeBg);
+$inlineCodeText: var(--inlineCodeText);
 
