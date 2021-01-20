@@ -19,10 +19,10 @@
 [data-theme='dark'] {
   --bg: #282c35;
   --text: #e6e6e6;
-  --primary: #5E56D0;
+  --primary: #788CDE;
   --secondary: #7770D7;
   --title: var(--primary);
-  --link: #7770D7;
+  --link: #7d89ff;
   --inlineCodeBg: rgba(115, 124, 153, 0.2);
   --inlineCodeText: #e6e6e6;
 }
@@ -69,8 +69,8 @@ h3 {
 
 code, pre, code > *, code > * > *, code > * > * > * {
   @include useJetBrainsMono();
-  -webkit-font-smoothing: unset;
-  -moz-osx-font-smoothing: unset;
+  -webkit-font-smoothing: auto;
+  -moz-osx-font-smoothing: auto;
 }
 
 code {
