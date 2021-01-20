@@ -1,15 +1,19 @@
-import React from 'react';
+import React, { useEffect } from 'react';
 import { Layout } from '../components/Layout';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { getAllPostIds, getPostData } from '../lib/posts';
 import { IPost } from '../interfaces';
 import { Date } from '../components/Date';
+import { BackLink } from '../components/BackLink';
 
 type TPostData = {
   postData: IPost
 }
 
 const Post = ({postData}: TPostData) => {
+  useEffect(() => {
+    console.log(postData);
+  });
   return (
     <Layout title={postData.title}>
       <article>
@@ -20,6 +24,7 @@ const Post = ({postData}: TPostData) => {
           dangerouslySetInnerHTML={{__html: postData.contentHtml}}
         />
       </article>
+      <BackLink text='вернуться к списку'/>
     </Layout>
   );
 };
