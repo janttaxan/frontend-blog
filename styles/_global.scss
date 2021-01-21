@@ -94,6 +94,20 @@ a {
   }
 }
 
+blockquote {
+  width: calc(100% + 32px);
+  transform: translateX(-16px);
+  padding: 16px 16px 16px 12px;
+  margin: 0 0 24px;
+  border-left: 4px solid $text;
+  background-color: $inlineCodeBg;
+  color: $inlineCodeText;
+
+  & > p {
+    margin-bottom: 0;
+  }
+}
+
 @media all and (min-width: 768px) {
   h1, h2, h3, h4, h5 {
     margin: 64px 0 16px;
@@ -117,5 +131,9 @@ a {
 
   ul, ol {
     padding: 0;
+  }
+
+  blockquote {
+    border-radius: 0 8px 8px 0;
   }
 }
