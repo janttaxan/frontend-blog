@@ -19,10 +19,10 @@
 [data-theme='dark'] {
   --bg: #282c35;
   --text: #e6e6e6;
-  --primary: #788CDE;
-  --secondary: #7770D7;
+  --primary: #7d89ff;
+  --secondary: rgba(125, 137, 255, 0.85);
   --title: var(--primary);
-  --link: #7d89ff;
+  --link: var(--primary);
   --inlineCodeBg: rgba(115, 124, 153, 0.2);
   --inlineCodeText: #e6e6e6;
 }
