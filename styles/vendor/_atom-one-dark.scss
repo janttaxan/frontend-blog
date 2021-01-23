@@ -6,6 +6,7 @@
   padding: 16px;
   color: #abb2bf;
   background: #011627;
+  border-radius: 0;
 
   @media all and (min-width: 768px) {
     border-radius: 8px;
@@ -49,7 +50,6 @@
   color: #e6c07b;
 }
 
-.hljs-attr,
 .hljs-variable,
 .hljs-template-variable,
 .hljs-type,

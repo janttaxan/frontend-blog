@@ -15,7 +15,7 @@ const Post = ({postData}: TPostData) => {
     console.log(postData);
   });
   return (
-    <Layout title={postData.title}>
+    <Layout title={postData.title} metaDescription={postData.spoiler}>
       <article>
         <h1>{postData.title}</h1>
         <Date dateString={postData.date}/>

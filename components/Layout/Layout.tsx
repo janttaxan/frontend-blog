@@ -9,9 +9,10 @@ type Props = {
   children: ReactNode
   title?: string
   home?: boolean
+  metaDescription?: string
 }
 
-export const Layout = ({children, title = 'Frontend blog.', home = false}: Props) => (
+export const Layout = ({children, title = 'Frontend blog.', home = false, metaDescription}: Props) => (
   <div className={styles.layoutContainer}>
     <Head>
       <title>{title}</title>
@@ -21,7 +22,13 @@ export const Layout = ({children, title = 'Frontend blog.', home = false}: Props
         name="keywords"
         content="блог, фронтенд, разработка, janttaxan, javascript, frontend, дизайн, верстка, статьи, фролов, frolov"
       />
-      <meta name="description" content="Конспекты, заметки и статьи на тему frontend разработки. Максим Фролов"/>
+      <meta
+        name="description"
+        content={
+          metaDescription ||
+          'Конспекты, заметки и статьи на тему frontend разработки. Максим Фролов'
+        }
+      />
     </Head>
     <div className={styles.header}>
       <Header isHome={home}/>
