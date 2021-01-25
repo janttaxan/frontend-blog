@@ -229,8 +229,7 @@ console.log(triple(5)); // mul(3, 5) -> 15
 
 ```jsx
 function partial(func, ...argsBound) {
-  return funtion(...args)
-  { // (*)
+  return function(...args) { // (*)
     return func.call(this, ...argsBound, ...args);
   }
 }
