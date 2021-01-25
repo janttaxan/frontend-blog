@@ -13,6 +13,7 @@
   --link: var(--primary);
   --inlineCodeBg: rgba(255, 233, 159, 0.3);
   --inlineCodeText: #333333;
+  --accentLine: rgba(255, 233, 159, 0.95);
 }
 
 // переменные для темной темы
@@ -25,6 +26,7 @@
   --link: var(--primary);
   --inlineCodeBg: rgba(115, 124, 153, 0.2);
   --inlineCodeText: #e6e6e6;
+  --accentLine: var(--text);
 }
 
 * {
@@ -99,7 +101,7 @@ blockquote {
   transform: translateX(-16px);
   padding: 16px 16px 16px 12px;
   margin: 0 0 24px;
-  border-left: 4px solid $text;
+  border-left: 4px solid $accentLine;
   background-color: $inlineCodeBg;
   color: $inlineCodeText;
 
