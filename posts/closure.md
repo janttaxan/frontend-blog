@@ -38,7 +38,7 @@ console.log(phrase);
 
 ```jsx
 // Начало выполнения  // -> <пусто>
-let phrase; 		  // -> { phrase: undefined }
+let phrase;           // -> { phrase: undefined }
 let phrase = 'Hello'; // -> { phrase: "Hello" }
 let phrase = 'Bye';   // -> { phrase: "Bye" }
 ```
