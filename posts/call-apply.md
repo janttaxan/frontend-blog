@@ -1,7 +1,7 @@
 ---
 date: '2021-01-24'  
 title: 'Методы call и apply'  
-spoiler: 'Явное указание this с помощью call/apply'
+spoiler: 'Явное указание this с помощью call/apply.'
 ---
 
 ## Метод call

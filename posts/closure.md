@@ -1,7 +1,7 @@
 ---
 date: '2021-01-24'  
 title: 'Замыкание'  
-spoiler: 'Замыкание в JavaScript. Области видимости'
+spoiler: 'Замыкание в JavaScript. Области видимости.'
 ---
 
 Замыкание — это функция, которая запоминает свои внешние переменные и может получить к ним доступ. В JavaScript все
@@ -233,6 +233,7 @@ function makeCounter() {
   let counter = makeCounter();
   console.log(counter()); // -> 0
   console.log(counter()); // -> 1
+}
 ```
 
 Что происходит в примере с `makeCounter` шаг за шагом:
