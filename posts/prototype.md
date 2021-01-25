@@ -1,7 +1,7 @@
 ---
 date: '2021-01-26'
 title: 'Прототипы, наследование'
-spoiler: 'Прототипное наследование, свойство prototype, this у прототипов.'
+spoiler: 'Прототипное наследование, свойство prototype и значение this.'
 ---
 
 В программировании часто возникает необходимость что-то расширить.
@@ -34,7 +34,7 @@ let rabbit = {
 rabbit.__proto__ = animal; // (*)
 
 // теперь мы можем найти оба свойства в rabbit:
-console.log(rabbit.eats); // -> true (**)
+console.log(rabbit.eats);  // -> true (**)
 console.log(rabbit.jumps); // -> true
 ```
 
