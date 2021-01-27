@@ -28,7 +28,7 @@ setTimeout(user.sayHi, 1000); // -> Привет, undefined!
 
 ```jsx
 let f = user.sayHi;
-setTimeout(user.sayHi, 1000); // контекст user потерян
+setTimeout(f, 1000); // контекст user потерян
 ```
 
 ## Решение 1: сделать функцию-обертку
