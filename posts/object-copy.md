@@ -1,6 +1,6 @@
 ---
-date: '2021-01-21'  
-title: 'Reference type: Копирование объектов и ссылки'  
+date: '2021-01-21'
+title: 'Reference type: Копирование объектов и ссылки'
 spoiler: 'Все, что нужно знать о копировании, сравнении и клонировании объектов.'
 ---
 
@@ -132,8 +132,7 @@ console.log(clone.name); // -> 'Николай'
 ```
 
 А так же для этих целей можно
-использовать [Object.assign](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/assign)
-.
+использовать [Object.assign](https://developer.mozilla.org/ru/docs/Web/JavaScript/Reference/Global_Objects/Object/assign).
 
 Синтаксис:
 
