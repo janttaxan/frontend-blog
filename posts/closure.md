@@ -136,7 +136,7 @@ function sayHi() {
 
 name = 'Pete'; // (*)
 
-sayHi(); // -> Pete
+sayHi(); // -> Hi, Pete
 ```
 
 Порядок выполнения кода из примера выше:

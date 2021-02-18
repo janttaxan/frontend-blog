@@ -154,12 +154,12 @@ let skills1 = {canRun: true};
 let skills2 = {canFly: false};
 
 // копируем все свойства skills1 и skills2 в user
-Object.asign(user, skills1, skills2);
+Object.assign(user, skills1, skills2);
 
 // теперь user = { name: 'Иван', canRun: true, canFly: false }
 ```
 
-Если принимающий объект (`user`) уде имеет свойство с таким именем, оно будет перезаписано:
+Если принимающий объект (`user`) уже имеет свойство с таким именем, оно будет перезаписано:
 
 ```jsx
 let user = {name: 'Иван'};
