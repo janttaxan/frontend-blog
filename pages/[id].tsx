@@ -2,7 +2,7 @@ import React, { useEffect } from 'react';
 import { Layout } from '../components/Layout';
 import { GetStaticPaths, GetStaticProps } from 'next';
 import { getAllPostIds, getPostData } from '../lib/posts';
-import { IPost } from '../interfaces';
+import { IPost } from '../interfaces/IPost';
 import { Date } from '../components/Date';
 import { BackLink } from '../components/BackLink';
 

@@ -1,6 +1,6 @@
 import React from 'react';
 import styles from './postlist.module.scss';
-import { IPost } from '../../interfaces';
+import { IPost } from '../../interfaces/IPost';
 import { PostItem } from './PostItem';
 
 export const PostList = ({posts}: {posts: IPost[]}) => (

@@ -1,7 +1,7 @@
 import React from 'react';
 import styles from './postitem.module.scss';
 import Link from 'next/link';
-import { IPost } from '../../../interfaces';
+import { IPost } from '../../../interfaces/IPost';
 import { Date } from '../../Date';
 
 export const PostItem = ({id, date, title, spoiler}: Omit<IPost, 'contentHtml'>) => (
