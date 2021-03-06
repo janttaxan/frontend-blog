@@ -1,7 +1,7 @@
 import React from 'react';
 import { Layout } from '../components/Layout/';
 import { getSortedPostsData } from '../lib/posts';
-import { IPost } from '../interfaces';
+import { IPost } from '../interfaces/IPost';
 import { PostList } from '../components/PostList';
 import { GetStaticProps } from 'next';
 

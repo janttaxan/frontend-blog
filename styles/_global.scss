@@ -69,6 +69,10 @@ h3 {
   margin: 40px 0 16px;
 }
 
+h4, h5 {
+  margin: 32px 0 16px;
+}
+
 h2[id], h3[id] {
   display: flex;
   transform: translateX(-18px);
@@ -164,6 +168,11 @@ ul, ol {
 
   h3 {
     font-size: 20px;
+    margin: 48px 0 16px;
+  }
+
+  h4, h5 {
+    margin: 40px 0 16px;
   }
 
   ul, ol {
